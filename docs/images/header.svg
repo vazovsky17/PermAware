@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="title desc">
+  <title id="title">PermAware — permissions under control</title>
+  <desc id="desc">Local-first Android privacy auditor. No network permission, 473 packages scanned in about 1.5 seconds, 194 automated tests.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E0C1B"/>
+      <stop offset="0.55" stop-color="#16132B"/>
+      <stop offset="1" stop-color="#211843"/>
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.58" stop-color="#E6DDFC"/>
+      <stop offset="1" stop-color="#B9A8F4"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9B87E6" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#C9BAF6"/>
+      <stop offset="1" stop-color="#6C5DD3" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9BAF6"/>
+      <stop offset="1" stop-color="#6C5DD3"/>
+    </linearGradient>
+    <radialGradient id="violetGlow" cx="0.75" cy="0.28" r="0.72">
+      <stop offset="0" stop-color="#9B87E6" stop-opacity="0.27"/>
+      <stop offset="1" stop-color="#9B87E6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="softGlow" cx="0.15" cy="0.9" r="0.58">
+      <stop offset="0" stop-color="#6C5DD3" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#6C5DD3" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#C9BAF6" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#090712" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="430" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="430" fill="url(#background)"/>
+    <rect width="1200" height="430" fill="url(#grid)"/>
+    <rect width="1200" height="430" fill="url(#violetGlow)"/>
+    <rect width="1200" height="430" fill="url(#softGlow)"/>
+    <path d="M0 1.5H1200" stroke="url(#accent)" stroke-width="3"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+      <g transform="translate(66 60)">
+        <circle cx="6" cy="6" r="5" fill="#51B67A">
+          <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="24" y="11" font-size="13" letter-spacing="3.1" fill="#9897A3">LOCAL PRIVACY AUDIT / ONLINE</text>
+      </g>
+
+      <text x="62" y="158" font-size="70" font-weight="700" letter-spacing="-2" fill="url(#titleGradient)">PermAware<tspan fill="#C9BAF6">_</tspan></text>
+      <text x="66" y="204" font-size="21" letter-spacing="1.2" fill="#D0CAE4">PERMISSIONS UNDER CONTROL</text>
+      <text x="66" y="244" font-size="16" fill="#9897A3">See access. Understand context. Notice change.</text>
+
+      <g transform="translate(66 294)" font-size="12" letter-spacing="1.2">
+        <g>
+          <rect width="144" height="36" rx="8" fill="#51B67A" fill-opacity="0.08" stroke="#51B67A" stroke-opacity="0.42"/>
+          <text x="17" y="23" fill="#83D6A3">ON-DEVICE</text>
+        </g>
+        <g transform="translate(157)">
+          <rect width="158" height="36" rx="8" fill="#C9BAF6" fill-opacity="0.08" stroke="#C9BAF6" stroke-opacity="0.38"/>
+          <text x="17" y="23" fill="#D9CFF9">NO INTERNET</text>
+        </g>
+        <g transform="translate(328)">
+          <rect width="124" height="36" rx="8" fill="#9B87E6" fill-opacity="0.08" stroke="#9B87E6" stroke-opacity="0.42"/>
+          <text x="17" y="23" fill="#B9A8F4">AUDITABLE</text>
+        </g>
+      </g>
+
+      <text x="66" y="383" font-size="11" letter-spacing="1.6" fill="#5D5C66">ANDROID 9+  /  KOTLIN  /  JETPACK COMPOSE  /  ROOM</text>
+    </g>
+
+    <g transform="translate(752 35)" filter="url(#shadow)">
+      <rect width="382" height="360" rx="26" fill="#11101E" fill-opacity="0.92" stroke="#9B87E6" stroke-opacity="0.28"/>
+      <path d="M24 58H358" stroke="#363446"/>
+
+      <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+        <circle cx="27" cy="29" r="4" fill="#51B67A"/>
+        <text x="42" y="34" font-size="12" letter-spacing="2" fill="#B9B2D5">DEVICE / SNAPSHOT</text>
+        <text x="334" y="34" text-anchor="end" font-size="11" fill="#51B67A">LOCAL</text>
+
+        <g transform="translate(94 77)">
+          <circle cx="97" cy="92" r="78" fill="#6C5DD3" fill-opacity="0.045" stroke="#363446" stroke-width="11"/>
+          <circle cx="97" cy="92" r="78" fill="none" stroke="url(#ring)" stroke-width="11" stroke-linecap="round" stroke-dasharray="398 490" transform="rotate(-90 97 92)" filter="url(#glow)">
+            <animate attributeName="stroke-dashoffset" values="490;0" dur="2.4s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M97 45L125 56V82C125 103 113 119 97 128C81 119 69 103 69 82V56Z" fill="#C9BAF6" fill-opacity="0.10" stroke="#C9BAF6" stroke-width="2"/>
+          <path d="M85 84L94 93L111 72" fill="none" stroke="#C9BAF6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="97" y="153" text-anchor="middle" font-size="11" letter-spacing="1.7" fill="#9897A3">SCAN COMPLETE</text>
+        </g>
+
+        <g transform="translate(28 279)" font-size="10">
+          <text x="0" y="0" fill="#6F6A7B">PACKAGES</text>
+          <text x="0" y="25" font-size="15" font-weight="700" fill="#EEEDF5">473</text>
+          <text x="103" y="0" fill="#6F6A7B">DURATION</text>
+          <text x="103" y="25" font-size="15" font-weight="700" fill="#EEEDF5">~1.5 SEC</text>
+          <text x="224" y="0" fill="#6F6A7B">TESTS</text>
+          <text x="224" y="25" font-size="15" font-weight="700" fill="#C9BAF6">194 PASS</text>
+        </g>
+
+        <g transform="translate(28 329)">
+          <text x="0" y="0" font-size="10" fill="#6F6A7B">NETWORK PERMISSION</text>
+          <text x="330" y="0" text-anchor="end" font-size="11" font-weight="700" fill="#51B67A">NOT DECLARED</text>
+        </g>
+      </g>
+
+      <g fill="#C9BAF6">
+        <circle cx="43" cy="100" r="2" opacity="0.35"/>
+        <circle cx="337" cy="99" r="2" opacity="0.5"/>
+        <circle cx="44" cy="215" r="2" opacity="0.52"/>
+        <circle cx="338" cy="220" r="2" opacity="0.3"/>
+      </g>
+      <g stroke="#9B87E6" stroke-opacity="0.18" stroke-dasharray="3 5">
+        <path d="M43 100L119 123"/><path d="M337 99L263 123"/>
+        <path d="M44 215L120 197"/><path d="M338 220L262 199"/>
+      </g>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#514873">
+      <text x="1160" y="414" text-anchor="end">APP.VAZOVSKY.PERMAWARE / 1.0.0</text>
+    </g>
+  </g>
+</svg>
