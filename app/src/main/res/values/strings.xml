@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ============================ Branding ============================ -->
+    <string name="app_name">PermAware</string>
+    <string name="app_tagline">Разрешения под контролем</string>
+
+    <!-- ============================ Navigation ============================ -->
+    <string name="nav_dashboard">Обзор</string>
+    <string name="nav_apps">Приложения</string>
+    <string name="nav_history">Изменения</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="action_back">Назад</string>
+    <string name="action_retry">Повторить</string>
+    <string name="action_cancel">Отмена</string>
+
+    <!-- ============================ Onboarding ============================ -->
+    <string name="onboarding_skip">Пропустить</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_page_indicator">Шаг %1$d из %2$d</string>
+
+    <string name="onboarding_1_title">Следите за разрешениями приложений</string>
+    <string name="onboarding_1_body">PermAware показывает, какие приложения имеют доступ к камере, микрофону, местоположению и контактам — и что изменилось после обновлений.</string>
+
+    <string name="onboarding_2_title">Данные остаются на устройстве</string>
+    <string name="onboarding_2_body">Список приложений и результаты проверок обрабатываются локально. Без аккаунта, без рекламы, без отслеживания.</string>
+    <string name="onboarding_2_point_local">Анализ выполняется на устройстве</string>
+    <string name="onboarding_2_point_no_internet">У приложения нет разрешения на доступ в интернет</string>
+    <string name="onboarding_2_point_no_account">Не нужен аккаунт и регистрация</string>
+
+    <string name="onboarding_3_title">Первая проверка</string>
+    <string name="onboarding_3_body">Проверка занимает несколько секунд. Её результат станет отправной точкой: со следующего раза PermAware будет показывать, что изменилось.</string>
+    <string name="onboarding_3_action">Проверить приложения</string>
+
+    <string name="onboarding_disclosure_title">PermAware читает список установленных приложений</string>
+    <string name="onboarding_disclosure_body">Чтобы показать, у каких приложений есть доступ к камере, микрофону, местоположению и контактам, приложение читает список установленных приложений и их разрешения.\n\nЭтот анализ полностью выполняется на вашем устройстве. Список приложений и результаты проверок не передаются разработчику или третьим лицам — у приложения вообще нет разрешения на доступ в интернет.</string>
+
+    <!-- ============================ Dashboard ============================ -->
+    <string name="dashboard_privacy_overview">Обзор приватности</string>
+    <string name="dashboard_score_value">%1$d</string>
+    <string name="dashboard_score_max">/ 100</string>
+    <string name="dashboard_why_score">Почему %1$d?</string>
+    <string name="dashboard_scan_now">Проверить сейчас</string>
+    <string name="dashboard_dial_start">Нажмите, чтобы проверить</string>
+    <string name="dashboard_dial_first">Нажмите, чтобы начать проверку</string>
+    <string name="dashboard_dial_scanning">Проверяем приложения…</string>
+    <string name="dashboard_open_apps">Посмотреть приложения</string>
+    <string name="cd_scan_dial">Оценка приватности %1$d из 100. Нажмите, чтобы проверить заново</string>
+    <string name="cd_scan_dial_empty">Проверка ещё не запускалась. Нажмите, чтобы начать</string>
+    <string name="dashboard_scanning">Идёт проверка…</string>
+    <string name="dashboard_sensitive_permissions">Чувствительные разрешения</string>
+    <string name="dashboard_sensitive_subtitle">Сколько ваших приложений сейчас имеют доступ</string>
+    <string name="dashboard_recent_changes">Последние изменения</string>
+    <string name="dashboard_all_changes">Все изменения</string>
+    <string name="dashboard_all_apps">Все приложения</string>
+    <string name="dashboard_last_scan">Последняя проверка: %1$s</string>
+    <string name="dashboard_header_never">Проверка ещё не выполнялась</string>
+    <string name="dashboard_verdict_good">Ничего необычного</string>
+    <string name="dashboard_verdict_watch">Есть на что посмотреть</string>
+    <string name="dashboard_verdict_review">Стоит проверить доступы</string>
+    <string name="dashboard_no_changes">С прошлой проверки ничего не изменилось</string>
+    <string name="dashboard_no_changes_first">Это первая проверка. Со следующего раза здесь появятся изменения.</string>
+    <string name="dashboard_attention_none">Приложений, требующих внимания, не найдено</string>
+    <string name="dashboard_scan_failed">Не удалось завершить проверку</string>
+    <string name="dashboard_scan_failed_body">Проверка прервалась. Обычно помогает повторный запуск.</string>
+
+    <!-- Why-this-score sheet -->
+    <string name="score_explain_title">Из чего складывается оценка</string>
+    <string name="score_explain_intro">Оценка показывает, какая часть установленных вами приложений имеет доступ к чувствительным функциям телефона. Это не оценка защищённости и не результат проверки на угрозы.</string>
+    <string name="score_explain_base">Начальное значение</string>
+    <string name="score_explain_result">Итог</string>
+    <string name="score_explain_penalty">−%1$d</string>
+    <string name="score_explain_system_note">Предустановленные системные приложения не учитываются в подсчёте: их выбирал не пользователь, и удалить их обычно нельзя. Исключение — включённый особый доступ, он учитывается для любых приложений.</string>
+    <string name="score_explain_no_reasons">Ни одно из установленных вами приложений не имеет доступа к чувствительным функциям.</string>
+    <string name="score_reason_category">Приложений с доступом к категории «%1$s»: %2$d</string>
+    <string name="score_reason_background_location">Приложений с доступом к местоположению в фоне: %1$d</string>
+    <string name="score_reason_special_access">Приложений с включённым особым доступом: %1$d</string>
+    <string name="score_reason_attention">Приложений, требующих внимания: %1$d</string>
+
+    <!-- ============================ Apps list ============================ -->
+    <string name="apps_title">Приложения</string>
+    <string name="apps_search_hint">Поиск по названию или пакету</string>
+    <string name="apps_search">Поиск</string>
+    <string name="apps_clear_search">Очистить</string>
+    <string name="apps_sort">Сортировка</string>
+    <string name="apps_filter_all">Все</string>
+    <string name="apps_filter_user">Пользовательские</string>
+    <string name="apps_filter_system">Системные</string>
+    <string name="apps_filter_attention">Требуют внимания</string>
+    <string name="apps_sort_attention">По вниманию</string>
+    <string name="apps_sort_name">По названию</string>
+    <string name="apps_sort_recently_updated">Недавно обновлённые</string>
+    <string name="apps_sort_most_permissions">Больше чувствительных разрешений</string>
+    <string name="apps_updated_ago">Обновлено %1$s</string>
+    <string name="apps_empty_search">Ничего не найдено по запросу «%1$s»</string>
+    <string name="apps_empty_filter">Нет приложений, подходящих под выбранный фильтр</string>
+    <string name="apps_empty_filters">Нет приложений с выбранными фильтрами</string>
+    <string name="apps_empty_title">Список пуст</string>
+
+    <!-- ============================ App details ============================ -->
+    <string name="app_details_title">Приложение</string>
+    <string name="app_details_sensitive_permissions">Чувствительные разрешения</string>
+    <string name="app_details_other_permissions_count">Остальные разрешения (%1$d)</string>
+    <string name="app_details_special_access">Особый доступ</string>
+    <string name="app_details_information">Сведения</string>
+    <string name="app_details_history">История изменений</string>
+    <string name="app_details_no_history">Изменений для этого приложения пока не зафиксировано</string>
+    <string name="app_details_no_sensitive">Приложение не запрашивает чувствительных разрешений</string>
+    <string name="app_details_manage_permissions">Управление разрешениями</string>
+    <string name="app_details_manage_hint">PermAware не изменяет разрешения самостоятельно — кнопка открывает системные настройки приложения.</string>
+    <string name="app_details_source_question">Сомневаешься в этом приложении?</string>
+    <string name="app_details_source_action">Смотри код на GitHub</string>
+    <string name="app_details_version">Версия</string>
+    <string name="app_details_package">Пакет</string>
+    <string name="app_details_installed">Установлено</string>
+    <string name="app_details_updated">Обновлено</string>
+    <string name="app_details_installer">Источник установки</string>
+    <string name="app_details_installer_unknown">Не определён</string>
+    <string name="app_details_target_sdk">Целевая версия Android (SDK %1$d)</string>
+    <string name="app_details_type">Тип</string>
+    <string name="app_details_type_system">Системное приложение</string>
+    <string name="app_details_type_system_updated">Системное приложение (обновлено)</string>
+    <string name="app_details_type_user">Пользовательское приложение</string>
+    <string name="app_details_disabled">Отключено</string>
+    <string name="app_details_not_found">Приложение не найдено. Возможно, оно было удалено.</string>
+    <string name="app_details_settings_unavailable">Не удалось открыть системные настройки приложения</string>
+    <string name="app_details_copy_package">Скопировать имя пакета</string>
+    <string name="app_details_package_copied">Имя пакета скопировано</string>
+
+    <!-- Attention explanation -->
+    <string name="attention_why_title">Почему мы обращаем внимание</string>
+    <string name="attention_score">Оценка внимания: %1$d</string>
+    <string name="attention_no_factors">Приложение не имеет доступа к чувствительным функциям.</string>
+    <string name="attention_disclaimer">Разрешения сами по себе не означают, что приложение делает что-то плохое. Многим приложениям доступ нужен для работы.</string>
+    <string name="attention_factor_granted">Выдан доступ: %1$s</string>
+    <string name="attention_factor_background_location">Доступ к местоположению в фоне</string>
+    <string name="attention_factor_active_special">Включён особый доступ: %1$s</string>
+    <string name="attention_factor_declared_special">Заявлен особый доступ: %1$s</string>
+    <string name="attention_factor_combination">Сочетание нескольких чувствительных разрешений (%1$d)</string>
+    <string name="attention_factor_unknown_source">Источник установки не определён</string>
+    <string name="attention_points">+%1$d</string>
+
+    <!-- ============================ Permission detail ============================ -->
+    <string name="permission_what_it_allows">Что разрешает</string>
+    <string name="permission_why_attention">Почему стоит обратить внимание</string>
+    <string name="permission_technical_name">Техническое имя</string>
+    <string name="permission_custom">Собственное разрешение</string>
+    <string name="permission_custom_explanation">Это разрешение объявлено самим приложением или его производителем, а не системой Android.</string>
+    <string name="permission_no_description">Для этого разрешения нет описания. Ниже приведено его техническое имя.</string>
+    <string name="permission_protection_normal">Выдаётся при установке</string>
+    <string name="permission_protection_dangerous">Запрашивается у пользователя</string>
+    <string name="permission_protection_signature">Только для приложений с той же подписью</string>
+    <string name="permission_protection_appop">Особый доступ, настраивается отдельно</string>
+    <string name="permission_protection_unknown">Тип защиты не определён</string>
+
+    <string name="permission_state_granted">Разрешено</string>
+    <string name="permission_state_denied">Не разрешено</string>
+    <string name="permission_state_undetermined">Не удалось определить</string>
+    <string name="permission_state_undetermined_explanation">Android не сообщает сторонним приложениям, включён ли этот доступ у других приложений. Проверить его можно в системных настройках.</string>
+
+    <!-- ============================ Categories ============================ -->
+    <string name="category_location">Местоположение</string>
+    <string name="category_camera">Камера</string>
+    <string name="category_microphone">Микрофон</string>
+    <string name="category_contacts">Контакты</string>
+    <string name="category_calendar">Календарь</string>
+    <string name="category_sms">SMS</string>
+    <string name="category_phone">Телефон</string>
+    <string name="category_call_log">Журнал звонков</string>
+    <string name="category_storage">Файлы и медиа</string>
+    <string name="category_sensors">Датчики тела</string>
+    <string name="category_activity">Физическая активность</string>
+    <string name="category_nearby">Устройства рядом</string>
+    <string name="category_notifications">Уведомления</string>
+    <string name="category_accounts">Аккаунты</string>
+    <string name="category_special_access">Особый доступ</string>
+    <string name="category_system">Системные</string>
+    <string name="category_other">Прочие</string>
+
+    <!-- ============================ Attention levels ============================ -->
+    <string name="attention_low">Обычное</string>
+    <string name="attention_moderate">Среднее внимание</string>
+    <string name="attention_elevated">Повышенное внимание</string>
+    <string name="attention_low_short">Обычное</string>
+    <string name="attention_moderate_short">Среднее</string>
+    <string name="attention_elevated_short">Повышенное</string>
+
+    <!-- ============================ Special access ============================ -->
+    <string name="special_accessibility">Специальные возможности</string>
+    <string name="special_notification_listener">Доступ к уведомлениям</string>
+    <string name="special_device_admin">Администратор устройства</string>
+    <string name="special_battery">Работа без ограничений батареи</string>
+    <string name="special_vpn">Служба VPN</string>
+    <string name="special_overlay">Поверх других приложений</string>
+    <string name="special_install_unknown">Установка неизвестных приложений</string>
+    <string name="special_usage_access">Доступ к статистике использования</string>
+    <string name="special_exact_alarm">Точные будильники</string>
+    <string name="special_all_files">Доступ ко всем файлам</string>
+    <string name="special_write_settings">Изменение системных настроек</string>
+    <string name="special_pip">Картинка в картинке</string>
+
+    <string name="special_status_active">Включено</string>
+    <string name="special_status_inactive">Выключено</string>
+    <string name="special_status_declared">Заявлено, состояние неизвестно</string>
+    <string name="special_status_undetermined">Не удалось определить</string>
+    <string name="special_declared_explanation">Приложение может запросить этот доступ. Android не сообщает сторонним приложениям, подтвердил ли его пользователь.</string>
+    <string name="special_access_none">Особый доступ не заявлен</string>
+
+    <!-- ============================ History ============================ -->
+    <string name="history_title">Изменения</string>
+    <string name="history_today">Сегодня</string>
+    <string name="history_yesterday">Вчера</string>
+    <string name="history_filter_all">Все</string>
+    <string name="history_filter_permissions">Разрешения</string>
+    <string name="history_filter_updates">Обновления</string>
+    <string name="history_filter_installed">Установлены</string>
+    <string name="history_filter_removed">Удалены</string>
+    <string name="history_filter_special">Особый доступ</string>
+    <string name="history_empty_title">Изменений пока нет</string>
+    <string name="history_empty_body">PermAware сравнивает каждую проверку с предыдущей. Как только что-то изменится, это появится здесь.</string>
+    <string name="history_empty_filter">По выбранному фильтру изменений нет</string>
+    <string name="history_local_note">История хранится только на этом устройстве.</string>
+
+    <string name="change_app_installed">Приложение установлено</string>
+    <string name="change_app_removed">Приложение удалено</string>
+    <string name="history_removed_app_unknown">Удалённое приложение</string>
+    <string name="history_removed_note">Приложение больше не установлено, поэтому часть сведений недоступна.</string>
+    <string name="history_removed_last_version">Последняя версия %1$s</string>
+    <string name="cd_removed_app">Удалённое приложение %1$s, пакет %2$s</string>
+    <string name="change_app_updated">Обновлено</string>
+    <string name="change_version_transition">%1$s → %2$s</string>
+    <string name="change_permission_added">Новое разрешение</string>
+    <string name="change_permission_removed">Разрешение больше не запрашивается</string>
+    <string name="change_permission_granted">Разрешение выдано</string>
+    <string name="change_permission_revoked">Разрешение отозвано</string>
+    <string name="change_special_gained">Включён особый доступ</string>
+    <string name="change_special_lost">Выключен особый доступ</string>
+    <string name="change_after_update">После обновления изменились разрешения</string>
+
+    <!-- ============================ Settings ============================ -->
+    <string name="settings_title">Настройки</string>
+
+    <string name="settings_section_scanning">Проверка</string>
+    <string name="settings_auto_scan">Автоматическая проверка</string>
+    <string name="settings_auto_scan_summary">PermAware периодически проверяет изменения, когда Android разрешает выполнить фоновую задачу.</string>
+    <string name="settings_scan_interval">Интервал проверки</string>
+    <string name="settings_interval_6h">Каждые 6 часов</string>
+    <string name="settings_interval_daily">Раз в сутки</string>
+    <string name="settings_interval_3d">Раз в 3 дня</string>
+    <string name="settings_interval_weekly">Раз в неделю</string>
+    <string name="settings_background_note">Точное время выполнения определяет Android. В режиме энергосбережения проверка может откладываться.</string>
+    <string name="settings_history_retention">Хранение истории</string>
+    <string name="settings_retention_30">30 дней</string>
+    <string name="settings_retention_90">90 дней</string>
+    <string name="settings_retention_365">Год</string>
+    <string name="settings_retention_forever">Без ограничения</string>
+
+    <string name="settings_section_appearance">Внешний вид</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_theme_system">Системная</string>
+    <string name="settings_theme_light">Светлая</string>
+    <string name="settings_theme_dark">Тёмная</string>
+
+    <string name="settings_section_data">Данные</string>
+    <string name="settings_export_summary">Сохранить или отправить отчёт о текущем состоянии</string>
+    <string name="settings_export_text">Текстовый отчёт</string>
+    <string name="settings_export_json">Отчёт в формате JSON</string>
+    <string name="settings_export_empty">Сначала выполните проверку</string>
+    <string name="settings_export_failed">Не удалось подготовить отчёт</string>
+    <string name="settings_clear_history">Удалить историю</string>
+    <string name="settings_clear_history_summary">Удалить все записи об изменениях</string>
+    <string name="settings_clear_history_confirm">Удалить историю изменений? Текущие результаты проверки останутся, но сравнивать будет не с чем — следующая проверка станет новой отправной точкой.</string>
+    <string name="settings_clear_history_done">История удалена</string>
+    <string name="settings_reset">Сбросить PermAware</string>
+    <string name="settings_reset_summary">Удалить все данные приложения и начать заново</string>
+    <string name="settings_reset_confirm">Удалить все данные PermAware? Будут удалены история, результаты проверок и настройки. Отменить это действие нельзя.</string>
+    <string name="settings_reset_done">Данные удалены</string>
+    <string name="settings_action_delete">Удалить</string>
+    <string name="settings_local_note">Все данные PermAware хранятся только на этом устройстве. Приложение не имеет разрешения на доступ в интернет и ничего никуда не отправляет.</string>
+
+    <string name="settings_section_about">О приложении</string>
+    <string name="settings_version">Версия</string>
+    <string name="settings_privacy">Политика конфиденциальности</string>
+    <string name="settings_privacy_summary">Что приложение собирает и что с этим делает</string>
+    <string name="settings_licenses">Лицензии</string>
+    <string name="settings_licenses_summary">Библиотеки с открытым исходным кодом</string>
+    <string name="settings_about">О приложении</string>
+    <string name="settings_about_summary">Кто это сделал и зачем</string>
+    <string name="about_title">О приложении</string>
+    <string name="about_studio">Vazovsky Studio</string>
+    <string name="about_tagline">Маленькая студия: одна разработчица и очень много внимания к мелочам.</string>
+    <string name="about_body">PermAware не ищет вирусы и не пугает красными щитами. Он показывает, что ваши приложения уже умеют, и объясняет это по-человечески. Разрешения на интернет у него нет вовсе — списку ваших приложений просто некуда уехать.</string>
+    <string name="about_craft_title">Сделано вручную</string>
+    <string name="about_craft_body">Каждый оттенок проверен на контраст, каждый экран — на крупном шрифте, а любое число на главном экране можно пересчитать в списке приложений. Нашли расхождение — это баг, и я хочу о нём знать.</string>
+    <string name="about_source_title">Код открыт</string>
+    <string name="about_source_body">Не верьте на слово — посмотрите сами.</string>
+    <string name="about_support_title">Поддержать студию</string>
+    <string name="about_support_body">Ничего не открывает и ничего не выключает. Просто спасибо.</string>
+    <string name="about_contact_title">Нашли баг?</string>
+    <string name="about_contact_body">Напишите мне в Telegram — починю.</string>
+    <string name="about_version">Версия %1$s</string>
+    <string name="settings_what_app_cannot">Что PermAware не делает</string>
+    <string name="settings_disclaimer">PermAware — не антивирус. Он не ищет вредоносные программы и не определяет, следит ли приложение за вами. Он показывает, какой доступ к устройству есть у приложений, и что в этом доступе изменилось.</string>
+
+    <!-- ============================ Support the developer ============================ -->
+    <string name="support_title">Поддержать разработчика</string>
+    <string name="support_body">PermAware бесплатный, без рекламы и отслеживания. Если приложение оказалось полезным, можно поддержать его развитие.</string>
+    <string name="support_action">Поддержать на Boosty</string>
+    <string name="support_dismiss">Скрыть</string>
+    <string name="support_voluntary_note">Поддержка добровольная и не открывает дополнительных функций — все возможности приложения доступны бесплатно.</string>
+    <string name="support_browser_missing">Не удалось открыть ссылку: не найден браузер</string>
+    <string name="support_not_configured" tools:ignore="UnusedResources">Ссылка на Boosty не настроена (см. AppLinks.kt). Этот блок виден только в отладочной сборке.</string>
+
+    <!-- ============================ Privacy policy screen ============================ -->
+    <string name="privacy_title">Конфиденциальность</string>
+    <string name="privacy_headline">Ваши данные остаются на устройстве</string>
+    <string name="privacy_point_local_title">Локальный анализ</string>
+    <string name="privacy_point_local_body">Список установленных приложений и их разрешения читаются на устройстве и сохраняются в локальной базе данных приложения.</string>
+    <string name="privacy_point_no_internet_title">Нет доступа в интернет</string>
+    <string name="privacy_point_no_internet_body">PermAware не объявляет разрешение INTERNET. Приложение технически не может передать данные разработчику или третьим лицам.</string>
+    <string name="privacy_point_no_analytics_title">Нет аналитики и рекламы</string>
+    <string name="privacy_point_no_analytics_body">В приложении нет рекламных SDK, систем аналитики и трекеров. Не нужен аккаунт.</string>
+    <string name="privacy_point_backup_title">Нет облачных копий</string>
+    <string name="privacy_point_backup_body">Резервное копирование данных приложения отключено, поэтому результаты проверок не попадают в облако.</string>
+    <string name="privacy_point_boosty_title">Переход на Boosty</string>
+    <string name="privacy_point_boosty_body">Кнопка «Поддержать разработчика» открывает внешний сайт в браузере. Никакие данные к ссылке не добавляются. Сайт Boosty действует согласно собственной политике конфиденциальности.</string>
+
+    <!-- ============================ Export ============================ -->
+    <string name="export_chooser">Поделиться отчётом</string>
+    <string name="export_header">Отчёт PermAware</string>
+    <string name="export_generated_at">Сформирован: %1$s</string>
+    <string name="export_note">Отчёт сформирован локально на устройстве.</string>
+
+    <!-- ============================ Generic states ============================ -->
+    <string name="scan_in_progress">Проверяем приложения…</string>
+
+    <!-- ============================ Relative time ============================ -->
+    <string name="time_just_now">только что</string>
+    <string name="time_today_at">сегодня, %1$s</string>
+    <string name="time_yesterday_at">вчера, %1$s</string>
+
+    <!-- ============================ Accessibility ============================ -->
+    <string name="cd_app_icon">Значок приложения %1$s</string>
+    <string name="cd_attention_level">Уровень внимания: %1$s</string>
+    <string name="cd_expand">Развернуть</string>
+    <string name="cd_collapse">Свернуть</string>
+    <string name="cd_open_external">Откроется во внешнем браузере</string>
+    <string name="cd_category_card">%1$s, %2$s. Показать приложения.</string>
+    <string name="cd_score">Оценка приватности %1$d из 100</string>
+
+    <!-- ============================ Plurals ============================ -->
+    <plurals name="plural_apps">
+        <item quantity="one">%d приложение</item>
+        <item quantity="few">%d приложения</item>
+        <item quantity="many">%d приложений</item>
+        <item quantity="other">%d приложения</item>
+    </plurals>
+    <plurals name="plural_apps_need_attention">
+        <item quantity="one">%d приложение требует внимания</item>
+        <item quantity="few">%d приложения требуют внимания</item>
+        <item quantity="many">%d приложений требуют внимания</item>
+        <item quantity="other">%d приложения требуют внимания</item>
+    </plurals>
+    <plurals name="plural_row_permissions">
+        <item quantity="one">%d разрешение</item>
+        <item quantity="few">%d разрешения</item>
+        <item quantity="many">%d разрешений</item>
+        <item quantity="other">%d разрешения</item>
+    </plurals>
+    <plurals name="plural_sensitive_permissions">
+        <item quantity="one">%d чувствительное разрешение</item>
+        <item quantity="few">%d чувствительных разрешения</item>
+        <item quantity="many">%d чувствительных разрешений</item>
+        <item quantity="other">%d чувствительных разрешения</item>
+    </plurals>
+    <plurals name="plural_days_ago">
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="many">%d дней назад</item>
+        <item quantity="other">%d дня назад</item>
+    </plurals>
+    <plurals name="plural_hours_ago">
+        <item quantity="one">%d час назад</item>
+        <item quantity="few">%d часа назад</item>
+        <item quantity="many">%d часов назад</item>
+        <item quantity="other">%d часа назад</item>
+    </plurals>
+    <plurals name="plural_minutes_ago">
+        <item quantity="one">%d минуту назад</item>
+        <item quantity="few">%d минуты назад</item>
+        <item quantity="many">%d минут назад</item>
+        <item quantity="other">%d минуты назад</item>
+    </plurals>
+</resources>

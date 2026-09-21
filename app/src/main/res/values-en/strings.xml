@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ============================ Branding ============================ -->
+    <string name="app_name">PermAware</string>
+    <string name="app_tagline">Know what your apps can access</string>
+
+    <!-- ============================ Navigation ============================ -->
+    <string name="nav_dashboard">Overview</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_history">Changes</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_back">Back</string>
+    <string name="action_retry">Try again</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- ============================ Onboarding ============================ -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_page_indicator">Step %1$d of %2$d</string>
+
+    <string name="onboarding_1_title">Keep track of app permissions</string>
+    <string name="onboarding_1_body">PermAware shows which apps can reach your camera, microphone, location and contacts — and what changed after an update.</string>
+
+    <string name="onboarding_2_title">Your data stays on this device</string>
+    <string name="onboarding_2_body">The list of apps and the results of every check are processed locally. No account, no ads, no tracking.</string>
+    <string name="onboarding_2_point_local">Everything is analysed on your device</string>
+    <string name="onboarding_2_point_no_internet">The app has no internet permission</string>
+    <string name="onboarding_2_point_no_account">No account, no sign-up</string>
+
+    <string name="onboarding_3_title">First check</string>
+    <string name="onboarding_3_body">The check takes a few seconds. Its result becomes the baseline: from the next one on, PermAware can show you what changed.</string>
+    <string name="onboarding_3_action">Check my apps</string>
+
+    <string name="onboarding_disclosure_title">PermAware reads your list of installed apps</string>
+    <string name="onboarding_disclosure_body">To show which apps can reach your camera, microphone, location and contacts, the app reads the list of installed apps and the permissions they hold.\n\nThat analysis happens entirely on your device. Neither the list of apps nor the results of any check are sent to the developer or to anyone else — the app does not even hold the permission needed to reach the internet.</string>
+
+    <!-- ============================ Dashboard ============================ -->
+    <string name="dashboard_privacy_overview">Privacy overview</string>
+    <string name="dashboard_score_value">%1$d</string>
+    <string name="dashboard_score_max">/ 100</string>
+    <string name="dashboard_why_score">Why %1$d?</string>
+    <string name="dashboard_scan_now">Check now</string>
+    <string name="dashboard_dial_start">Tap to check</string>
+    <string name="dashboard_dial_first">Tap to run the first check</string>
+    <string name="dashboard_dial_scanning">Checking your apps…</string>
+    <string name="dashboard_open_apps">See the apps</string>
+    <string name="cd_scan_dial">Privacy score %1$d out of 100. Tap to check again</string>
+    <string name="cd_scan_dial_empty">No check has run yet. Tap to start</string>
+    <string name="dashboard_scanning">Checking…</string>
+    <string name="dashboard_sensitive_permissions">Sensitive permissions</string>
+    <string name="dashboard_sensitive_subtitle">How many of your apps can reach each one</string>
+    <string name="dashboard_recent_changes">Recent changes</string>
+    <string name="dashboard_all_changes">All changes</string>
+    <string name="dashboard_all_apps">All apps</string>
+    <string name="dashboard_last_scan">Last check: %1$s</string>
+    <string name="dashboard_header_never">No check run yet</string>
+    <string name="dashboard_verdict_good">Nothing unusual</string>
+    <string name="dashboard_verdict_watch">Worth a look</string>
+    <string name="dashboard_verdict_review">Worth reviewing access</string>
+    <string name="dashboard_no_changes">Nothing changed since the last check</string>
+    <string name="dashboard_no_changes_first">This was the first check. From the next one on, changes will appear here.</string>
+    <string name="dashboard_attention_none">No apps need attention</string>
+    <string name="dashboard_scan_failed">The check could not finish</string>
+    <string name="dashboard_scan_failed_body">The check stopped partway. Running it again usually helps.</string>
+
+    <!-- Why-this-score sheet -->
+    <string name="score_explain_title">How the score is calculated</string>
+    <string name="score_explain_intro">The score reflects how many of the apps you installed can reach sensitive parts of your phone. It is not a security rating and not the result of a threat scan.</string>
+    <string name="score_explain_base">Starting value</string>
+    <string name="score_explain_result">Result</string>
+    <string name="score_explain_penalty">−%1$d</string>
+    <string name="score_explain_system_note">Pre-installed system apps are left out of the count: you did not choose them, and usually cannot remove them. The one exception is special access that is switched on — that counts for any app.</string>
+    <string name="score_explain_no_reasons">None of the apps you installed can reach a sensitive part of your phone.</string>
+    <string name="score_reason_category">Apps that can reach %1$s: %2$d</string>
+    <string name="score_reason_background_location">Apps with background location access: %1$d</string>
+    <string name="score_reason_special_access">Apps with special access switched on: %1$d</string>
+    <string name="score_reason_attention">Apps that need attention: %1$d</string>
+
+    <!-- ============================ Apps list ============================ -->
+    <string name="apps_title">Apps</string>
+    <string name="apps_search_hint">Search by name or package</string>
+    <string name="apps_search">Search</string>
+    <string name="apps_clear_search">Clear</string>
+    <string name="apps_sort">Sort</string>
+    <string name="apps_filter_all">All</string>
+    <string name="apps_filter_user">User</string>
+    <string name="apps_filter_system">System</string>
+    <string name="apps_filter_attention">Needs attention</string>
+    <string name="apps_sort_attention">By attention</string>
+    <string name="apps_sort_name">By name</string>
+    <string name="apps_sort_recently_updated">Recently updated</string>
+    <string name="apps_sort_most_permissions">Most sensitive permissions</string>
+    <string name="apps_updated_ago">Updated %1$s</string>
+    <string name="apps_empty_search">Nothing found for “%1$s”</string>
+    <string name="apps_empty_filter">No apps match this filter</string>
+    <string name="apps_empty_filters">No apps match the selected filters</string>
+    <string name="apps_empty_title">Nothing to show</string>
+
+    <!-- ============================ App details ============================ -->
+    <string name="app_details_title">App</string>
+    <string name="app_details_sensitive_permissions">Sensitive permissions</string>
+    <string name="app_details_other_permissions_count">Other permissions (%1$d)</string>
+    <string name="app_details_special_access">Special access</string>
+    <string name="app_details_information">Details</string>
+    <string name="app_details_history">Change history</string>
+    <string name="app_details_no_history">No changes recorded for this app yet</string>
+    <string name="app_details_no_sensitive">This app requests no sensitive permissions</string>
+    <string name="app_details_manage_permissions">Manage permissions</string>
+    <string name="app_details_manage_hint">PermAware never changes a permission itself — this opens the app\'s settings in Android.</string>
+    <string name="app_details_source_question">Not sure about this app?</string>
+    <string name="app_details_source_action">Read the source on GitHub</string>
+    <string name="app_details_version">Version</string>
+    <string name="app_details_package">Package</string>
+    <string name="app_details_installed">Installed</string>
+    <string name="app_details_updated">Updated</string>
+    <string name="app_details_installer">Installed from</string>
+    <string name="app_details_installer_unknown">Unknown</string>
+    <string name="app_details_target_sdk">Targets Android (SDK %1$d)</string>
+    <string name="app_details_type">Type</string>
+    <string name="app_details_type_system">System app</string>
+    <string name="app_details_type_system_updated">System app (updated)</string>
+    <string name="app_details_type_user">Installed app</string>
+    <string name="app_details_disabled">Disabled</string>
+    <string name="app_details_not_found">App not found. It may have been uninstalled.</string>
+    <string name="app_details_settings_unavailable">Could not open the app\'s system settings</string>
+    <string name="app_details_copy_package">Copy package name</string>
+    <string name="app_details_package_copied">Package name copied</string>
+
+    <!-- Attention explanation -->
+    <string name="attention_why_title">Why this needs attention</string>
+    <string name="attention_score">Attention score: %1$d</string>
+    <string name="attention_no_factors">This app cannot reach any sensitive part of your phone.</string>
+    <string name="attention_disclaimer">Holding a permission does not mean an app is doing anything wrong. Plenty of apps need this access to work.</string>
+    <string name="attention_factor_granted">Access granted: %1$s</string>
+    <string name="attention_factor_background_location">Location access in the background</string>
+    <string name="attention_factor_active_special">Special access switched on: %1$s</string>
+    <string name="attention_factor_declared_special">Special access requested: %1$s</string>
+    <string name="attention_factor_combination">Several sensitive permissions together (%1$d)</string>
+    <string name="attention_factor_unknown_source">Install source unknown</string>
+    <string name="attention_points">+%1$d</string>
+
+    <!-- ============================ Permission detail ============================ -->
+    <string name="permission_what_it_allows">What it allows</string>
+    <string name="permission_why_attention">Why it is worth knowing</string>
+    <string name="permission_technical_name">Technical name</string>
+    <string name="permission_custom">Custom permission</string>
+    <string name="permission_custom_explanation">This permission was defined by the app itself or by its manufacturer, not by Android.</string>
+    <string name="permission_no_description">There is no description for this permission. Its technical name is below.</string>
+    <string name="permission_protection_normal">Granted at install</string>
+    <string name="permission_protection_dangerous">Asked of the user</string>
+    <string name="permission_protection_signature">Only for apps with the same signature</string>
+    <string name="permission_protection_appop">Special access, granted separately</string>
+    <string name="permission_protection_unknown">Protection level unknown</string>
+
+    <string name="permission_state_granted">Granted</string>
+    <string name="permission_state_denied">Not granted</string>
+    <string name="permission_state_undetermined">Could not be determined</string>
+    <string name="permission_state_undetermined_explanation">Android does not tell third-party apps whether another app has this access. You can check it in your system settings.</string>
+
+    <!-- ============================ Categories ============================ -->
+    <string name="category_location">Location</string>
+    <string name="category_camera">Camera</string>
+    <string name="category_microphone">Microphone</string>
+    <string name="category_contacts">Contacts</string>
+    <string name="category_calendar">Calendar</string>
+    <string name="category_sms">SMS</string>
+    <string name="category_phone">Phone</string>
+    <string name="category_call_log">Call log</string>
+    <string name="category_storage">Files and media</string>
+    <string name="category_sensors">Body sensors</string>
+    <string name="category_activity">Physical activity</string>
+    <string name="category_nearby">Nearby devices</string>
+    <string name="category_notifications">Notifications</string>
+    <string name="category_accounts">Accounts</string>
+    <string name="category_special_access">Special access</string>
+    <string name="category_system">System</string>
+    <string name="category_other">Other</string>
+
+    <!-- ============================ Attention levels ============================ -->
+    <string name="attention_low">Low attention</string>
+    <string name="attention_moderate">Moderate attention</string>
+    <string name="attention_elevated">Elevated attention</string>
+    <string name="attention_low_short">Low</string>
+    <string name="attention_moderate_short">Moderate</string>
+    <string name="attention_elevated_short">Elevated</string>
+
+    <!-- ============================ Special access ============================ -->
+    <string name="special_accessibility">Accessibility</string>
+    <string name="special_notification_listener">Notification access</string>
+    <string name="special_device_admin">Device admin</string>
+    <string name="special_battery">Unrestricted battery use</string>
+    <string name="special_vpn">VPN service</string>
+    <string name="special_overlay">Display over other apps</string>
+    <string name="special_install_unknown">Install unknown apps</string>
+    <string name="special_usage_access">Usage access</string>
+    <string name="special_exact_alarm">Exact alarms</string>
+    <string name="special_all_files">All files access</string>
+    <string name="special_write_settings">Modify system settings</string>
+    <string name="special_pip">Picture-in-picture</string>
+
+    <string name="special_status_active">On</string>
+    <string name="special_status_inactive">Off</string>
+    <string name="special_status_declared">Requested, state unknown</string>
+    <string name="special_status_undetermined">Could not be determined</string>
+    <string name="special_declared_explanation">The app can ask for this access. Android does not tell third-party apps whether the user granted it.</string>
+    <string name="special_access_none">No special access requested</string>
+
+    <!-- ============================ History ============================ -->
+    <string name="history_title">Changes</string>
+    <string name="history_today">Today</string>
+    <string name="history_yesterday">Yesterday</string>
+    <string name="history_filter_all">All</string>
+    <string name="history_filter_permissions">Permissions</string>
+    <string name="history_filter_updates">Updates</string>
+    <string name="history_filter_installed">Installed</string>
+    <string name="history_filter_removed">Removed</string>
+    <string name="history_filter_special">Special access</string>
+    <string name="history_empty_title">No changes yet</string>
+    <string name="history_empty_body">PermAware compares every check with the one before it. As soon as something changes, it appears here.</string>
+    <string name="history_empty_filter">No changes match this filter</string>
+    <string name="history_local_note">History is kept on this device only.</string>
+
+    <string name="change_app_installed">App installed</string>
+    <string name="change_app_removed">App removed</string>
+    <string name="history_removed_app_unknown">Removed app</string>
+    <string name="history_removed_note">The app is no longer installed, so some information is unavailable.</string>
+    <string name="history_removed_last_version">Last version %1$s</string>
+    <string name="cd_removed_app">Removed app %1$s, package %2$s</string>
+    <string name="change_app_updated">Updated</string>
+    <string name="change_version_transition">%1$s → %2$s</string>
+    <string name="change_permission_added">New permission</string>
+    <string name="change_permission_removed">Permission no longer requested</string>
+    <string name="change_permission_granted">Permission granted</string>
+    <string name="change_permission_revoked">Permission revoked</string>
+    <string name="change_special_gained">Special access switched on</string>
+    <string name="change_special_lost">Special access switched off</string>
+    <string name="change_after_update">Permissions changed after an update</string>
+
+    <!-- ============================ Settings ============================ -->
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_section_scanning">Checking</string>
+    <string name="settings_auto_scan">Automatic checks</string>
+    <string name="settings_auto_scan_summary">PermAware checks for changes from time to time, whenever Android lets a background task run.</string>
+    <string name="settings_scan_interval">How often</string>
+    <string name="settings_interval_6h">Every 6 hours</string>
+    <string name="settings_interval_daily">Once a day</string>
+    <string name="settings_interval_3d">Every 3 days</string>
+    <string name="settings_interval_weekly">Once a week</string>
+    <string name="settings_background_note">Android decides exactly when a background check runs. In battery saver it may be delayed.</string>
+    <string name="settings_history_retention">Keep history for</string>
+    <string name="settings_retention_30">30 days</string>
+    <string name="settings_retention_90">90 days</string>
+    <string name="settings_retention_365">A year</string>
+    <string name="settings_retention_forever">Forever</string>
+
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+
+    <string name="settings_section_data">Data</string>
+    <string name="settings_export_summary">Save or share a report of the current state</string>
+    <string name="settings_export_text">Text report</string>
+    <string name="settings_export_json">JSON report</string>
+    <string name="settings_export_empty">Run a check first</string>
+    <string name="settings_export_failed">Could not prepare the report</string>
+    <string name="settings_clear_history">Delete history</string>
+    <string name="settings_clear_history_summary">Remove every recorded change</string>
+    <string name="settings_clear_history_confirm">Delete the change history? The current check results stay, but there will be nothing to compare them with — the next check becomes the new baseline.</string>
+    <string name="settings_clear_history_done">History deleted</string>
+    <string name="settings_reset">Reset PermAware</string>
+    <string name="settings_reset_summary">Delete all app data and start over</string>
+    <string name="settings_reset_confirm">Delete all PermAware data? History, check results and settings will be removed. This cannot be undone.</string>
+    <string name="settings_reset_done">Data deleted</string>
+    <string name="settings_action_delete">Delete</string>
+    <string name="settings_local_note">All PermAware data is kept on this device only. The app holds no internet permission and sends nothing anywhere.</string>
+
+    <string name="settings_section_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_privacy">Privacy policy</string>
+    <string name="settings_privacy_summary">What the app collects, and what it does with it</string>
+    <string name="settings_licenses">Licences</string>
+    <string name="settings_licenses_summary">Open-source libraries</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_summary">Who made this, and why</string>
+    <string name="about_title">About</string>
+    <string name="about_studio">Vazovsky Studio</string>
+    <string name="about_tagline">A small studio: one developer and a great deal of attention to detail.</string>
+    <string name="about_body">PermAware does not hunt for viruses or frighten you with red shields. It shows what your apps can already do and explains it in plain language. It has no internet permission at all — your app list has nowhere to go.</string>
+    <string name="about_craft_title">Made by hand</string>
+    <string name="about_craft_body">Every shade is checked for contrast, every screen at a large font size, and every number on the dashboard can be recounted in the app list. If you find a mismatch, that is a bug and I want to hear about it.</string>
+    <string name="about_source_title">The source is open</string>
+    <string name="about_source_body">Do not take my word for it — look for yourself.</string>
+    <string name="about_support_title">Support the studio</string>
+    <string name="about_support_body">Unlocks nothing and switches nothing off. Just thank you.</string>
+    <string name="about_contact_title">Found a bug?</string>
+    <string name="about_contact_body">Send me a message on Telegram and I will fix it.</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="settings_what_app_cannot">What PermAware does not do</string>
+    <string name="settings_disclaimer">PermAware is not an antivirus. It does not look for malware and it cannot tell you whether an app is spying on you. It shows what access apps have to your device, and what has changed about that access.</string>
+
+    <!-- ============================ Support the developer ============================ -->
+    <string name="support_title">Support the developer</string>
+    <string name="support_body">PermAware is free, with no ads and no tracking. If you find it useful, you can support its development.</string>
+    <string name="support_action">Support on Boosty</string>
+    <string name="support_dismiss">Hide</string>
+    <string name="support_voluntary_note">Support is voluntary and unlocks nothing — every feature of the app is free.</string>
+    <string name="support_browser_missing">Could not open the link: no browser found</string>
+    <string name="support_not_configured" tools:ignore="UnusedResources">The Boosty link is not configured (see AppLinks.kt). This block appears in debug builds only.</string>
+
+    <!-- ============================ Privacy policy screen ============================ -->
+    <string name="privacy_title">Privacy</string>
+    <string name="privacy_headline">Your data stays on this device</string>
+    <string name="privacy_point_local_title">Local analysis</string>
+    <string name="privacy_point_local_body">The list of installed apps and the permissions they hold are read on the device and stored in the app\'s local database.</string>
+    <string name="privacy_point_no_internet_title">No internet access</string>
+    <string name="privacy_point_no_internet_body">PermAware does not declare the INTERNET permission. The app is technically unable to send anything to the developer or to anyone else.</string>
+    <string name="privacy_point_no_analytics_title">No analytics, no ads</string>
+    <string name="privacy_point_no_analytics_body">There are no advertising SDKs, analytics systems or trackers in the app. No account is needed.</string>
+    <string name="privacy_point_backup_title">No cloud copies</string>
+    <string name="privacy_point_backup_body">Backup of app data is turned off, so check results never reach the cloud.</string>
+    <string name="privacy_point_boosty_title">Opening Boosty</string>
+    <string name="privacy_point_boosty_body">The “Support the developer” button opens an external site in your browser. Nothing is added to the link. Boosty operates under its own privacy policy.</string>
+
+    <!-- ============================ Export ============================ -->
+    <string name="export_chooser">Share report</string>
+    <string name="export_header">PermAware report</string>
+    <string name="export_generated_at">Generated: %1$s</string>
+    <string name="export_note">This report was generated locally on the device.</string>
+
+    <!-- ============================ Generic states ============================ -->
+    <string name="scan_in_progress">Checking your apps…</string>
+
+    <!-- ============================ Relative time ============================ -->
+    <string name="time_just_now">just now</string>
+    <string name="time_today_at">today at %1$s</string>
+    <string name="time_yesterday_at">yesterday at %1$s</string>
+
+    <!-- ============================ Accessibility ============================ -->
+    <string name="cd_app_icon">%1$s icon</string>
+    <string name="cd_attention_level">Attention level: %1$s</string>
+    <string name="cd_expand">Expand</string>
+    <string name="cd_collapse">Collapse</string>
+    <string name="cd_open_external">Opens in an external browser</string>
+    <string name="cd_category_card">%1$s, %2$s. Show apps.</string>
+    <string name="cd_score" tools:ignore="PluralsCandidate">Privacy score %1$d out of 100</string>
+
+    <!-- ============================ Plurals ============================ -->
+    <plurals name="plural_apps">
+        <item quantity="one">%d app</item>
+        <item quantity="other">%d apps</item>
+    </plurals>
+    <plurals name="plural_apps_need_attention">
+        <item quantity="one">%d app needs attention</item>
+        <item quantity="other">%d apps need attention</item>
+    </plurals>
+    <plurals name="plural_row_permissions">
+        <item quantity="one">%d permission</item>
+        <item quantity="other">%d permissions</item>
+    </plurals>
+    <plurals name="plural_sensitive_permissions">
+        <item quantity="one">%d sensitive permission</item>
+        <item quantity="other">%d sensitive permissions</item>
+    </plurals>
+    <plurals name="plural_days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="plural_hours_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="plural_minutes_ago">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+</resources>

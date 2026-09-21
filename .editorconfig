@@ -1,0 +1,10 @@
+root = true
+
+[*.{kt,kts}]
+ktlint_code_style = intellij_idea
+max_line_length = 120
+ktlint_function_naming_ignore_when_annotated_with = Composable
+
+# Выключено намеренно: в трёх тестовых файлах комментарии выровнены в колонку, и это читается
+# таблицей. Правило схлопнуло бы выравнивание в один пробел.
+ktlint_standard_no-multi-spaces = disabled

@@ -1,0 +1,34 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+
+# Python bytecode from the tools/ scripts (icon and knowledge-base generators).
+__pycache__/
+*.pyc
+.externalNativeBuild
+.cxx
+.kotlin/
+app/build/
+
+# Signing material. Three rules for one file, because the one thing that must never happen to a
+# release keystore is that it is committed: the directory the build reads it from, the keystore
+# extensions themselves, and the properties files that hold its passwords.
+#
+# Nothing in here is recoverable if it leaks, and nothing in here is recoverable if it is
+# lost — keep an offline backup outside this repository.
+/signKeystore/
+*.jks
+*.keystore
+key.properties
+keystore.properties
+signing.properties
+
+# Исходники графики. В репозиторий не едут: лицензия запрещает переиспользовать оформление,
+# да и держать 5 МБ растра в истории незачем.
+/design/
+
+gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.PermAware" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:enforceStatusBarContrast" tools:targetApi="29">false</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="29">false</item>
+    </style>
+
+    <style name="Theme.PermAware.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.PermAware</item>
+    </style>
+</resources>

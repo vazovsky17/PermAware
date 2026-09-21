@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The single shareable location: a private cache subdirectory holding user-requested export files.
+  Nothing else in the app's storage is reachable through the provider — in particular the scan
+  database is not, and neither is any other cache path.
+-->
+<paths>
+    <cache-path name="reports" path="reports/" />
+</paths>
