@@ -10,6 +10,7 @@
 
 <a href="https://github.com/vazovsky17/PermAware/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/vazovsky17/PermAware/ci.yml?branch=main&style=flat-square&label=build&labelColor=161523&color=6C5DD3" alt="CI status"></a>
 <a href="https://github.com/vazovsky17/PermAware/releases/latest"><img src="https://img.shields.io/github/v/release/vazovsky17/PermAware?style=flat-square&label=release&labelColor=161523&color=6C5DD3" alt="Latest release"></a>
+<a href="https://hits.sh/github.com/vazovsky17/PermAware/"><img src="https://hits.sh/github.com/vazovsky17/PermAware.svg?style=flat-square&label=views&color=6C5DD3&labelColor=161523" alt="Repository views"></a>
 <img src="https://img.shields.io/badge/Android-9%2B-6C5DD3?style=flat-square&labelColor=161523&logo=android&logoColor=white" alt="Android 9 and newer">
 <img src="https://img.shields.io/badge/Kotlin-2.2-6C5DD3?style=flat-square&labelColor=161523&logo=kotlin&logoColor=white" alt="Kotlin 2.2">
 <img src="https://img.shields.io/badge/INTERNET-not%20declared-51B67A?style=flat-square&labelColor=161523&logo=shield&logoColor=white" alt="INTERNET permission is not declared">
@@ -167,6 +168,7 @@ device transfer      disabled
 Один Android-модуль, строгие границы между слоями и чистый Kotlin там, где платформе делать нечего.
 
 ```mermaid
+
 flowchart LR
     UI[Compose UI] --> DOMAIN[Domain]
     UI --> REPOSITORY[Repository]
